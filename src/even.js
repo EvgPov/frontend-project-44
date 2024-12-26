@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import name from 'cli.js';
+import name from './cli.js';
 
 const even = () => {
   let numberCorrectAnswer = 0;
   let correctAnswer = '';
-
+  
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
   while (numberCorrectAnswer <= 3) {
     const randomNumber = Math.floor(Math.random() * 10);
@@ -24,7 +24,5 @@ const even = () => {
     }
     console.log(`Congratulations, ${name}!`);
   };
-
-  even();
 
 export default even;
