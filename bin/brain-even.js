@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
-import { name } from '../src/cli.js'
+import { getName } from '../src/cli.js'
 
 const isEven = (num) => {
   if (num % 2 === 0) return 'yes'
@@ -16,7 +16,7 @@ export const checkingOfEven = () => {
     console.log(`Question: ${number}`)
     const answer = String(readlineSync.question('Your answer: '))
     if ((answer !== 'yes' && answer !== 'no') || answer !== isEven(number)) {
-      console.log(`"${answer}" is wrong answer :(. Correct answer was "${isEven(number)}". Let\`s try again, ${name}`)
+      console.log(`"${answer}" is wrong answer :(. Correct answer was "${isEven(number)}". Let\`s try again, ${name}!`)
       return
     }
     else {
@@ -24,5 +24,7 @@ export const checkingOfEven = () => {
       console.log(`Correct!`)
     }
   }
+  console.log(`Congratulations, ${name}!`)
 }
+const name = getName()
 checkingOfEven()
