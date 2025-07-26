@@ -4,7 +4,7 @@ const genNumber = () => {
 
 const findGCD = (numberFirst, numberSecond) => {
   let remainder = 1
-  
+
   if (numberFirst < numberSecond) {
     const number = numberFirst
     numberFirst = numberSecond
