@@ -16,18 +16,18 @@ export const funcPrime = (playName) => {
         console.log('Answer "yes" if the number is even, otherwise answer "no".')
         data = funcEven()
         question = data[0]
-        correctAnswer = String(data[1])
+        correctAnswer = data[1]
         break
       case 'calc':
         console.log('What is the result of the expression?')
         data = funcCalc()
         question = data[0]
-        correctAnswer = Number(data[1])
+        correctAnswer = String(data[1])
         break
     }
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')
-    if (Number(answer) !== correctAnswer) {
+    if (answer !== correctAnswer) {
       console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}". Let\`s try again, ${name}!`)
       return
     }
