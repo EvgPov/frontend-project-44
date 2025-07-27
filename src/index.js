@@ -3,6 +3,11 @@ import { getName } from '../src/cli.js'
 import { funcEven } from './games/even.js'
 import { funcCalc } from './games/calc.js'
 import { funcGCD } from './games/gcd.js'
+import { funcProgression } from './games/progression.js'
+
+export const generator = (min, max) => {
+  return Math.floor(min + Math.random() * (max + 1 - min))
+}
 
 export const funcPrime = (playName) => {
   const name = getName()
@@ -31,11 +36,17 @@ export const funcPrime = (playName) => {
         question = data[0]
         correctAnswer = String(data[1])
         break
+      case 'progression':
+        console.log('What number is missing in the progression?')
+        data = funcProgression()
+        question = data[0]
+        correctAnswer = String(data[1])
+        break
     }
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')
     if (answer !== correctAnswer) {
-      console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}". Let\`s try again, ${name}!`)
+      console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}". \n Let\`s try again, ${name}!`)
       return
     }
     else {

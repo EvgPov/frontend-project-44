@@ -13,3 +13,5 @@ https://asciinema.org/a/nrND4OL6lnJD3vKEAJGEoxKxd
 Аскинема с игрой "НОД - наибольший общий делитель" (brain-calc)
 https://asciinema.org/a/S3G5m71LDTQ4T5CVWPgiOCicH
 
+Аскинема с игрой "Арифметическая прогрессия" (brain-calc)
+https://asciinema.org/a/Wn1b5wovgkJG5pSKfN5sCPEqg
