@@ -22,34 +22,26 @@ export const funcPrime = (playName) => {
       case 'even':
         console.log('Answer "yes" if the number is even, otherwise answer "no".')
         data = funcEven()
-        question = data[0]
-        correctAnswer = data[1]
         break
       case 'calc':
         console.log('What is the result of the expression?')
         data = funcCalc()
-        question = data[0]
-        correctAnswer = String(data[1])
         break
       case 'gcd':
         console.log('Find the greatest common divisor of given numbers.')
         data = funcGCD()
-        question = data[0]
-        correctAnswer = String(data[1])
         break
       case 'progression':
         console.log('What number is missing in the progression?')
         data = funcProgression()
-        question = data[0]
-        correctAnswer = String(data[1])
         break
       case 'prime':
         console.log('Answer "yes" if given number is prime. Otherwise answer "no"')
         data = funcPrimeNumber()
-        question = data[0]
-        correctAnswer = String(data[1])
         break
     }
+    question = data[0]
+    correctAnswer = String(data[1])
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')
     if (answer !== correctAnswer) {

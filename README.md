@@ -15,3 +15,6 @@ https://asciinema.org/a/S3G5m71LDTQ4T5CVWPgiOCicH
 
 Аскинема с игрой "Арифметическая прогрессия" (brain-calc)
 https://asciinema.org/a/Wn1b5wovgkJG5pSKfN5sCPEqg
+
+Аскинема с игрой "Простое ли число" (brain-prime)
+https://asciinema.org/a/92bsLxtRG8a0yvhwdkGxi0Uab
