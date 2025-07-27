@@ -4,6 +4,7 @@ import { funcEven } from './games/even.js'
 import { funcCalc } from './games/calc.js'
 import { funcGCD } from './games/gcd.js'
 import { funcProgression } from './games/progression.js'
+import { funcPrimeNumber } from './games/prime.js'
 
 export const generator = (min, max) => {
   return Math.floor(min + Math.random() * (max + 1 - min))
@@ -39,6 +40,12 @@ export const funcPrime = (playName) => {
       case 'progression':
         console.log('What number is missing in the progression?')
         data = funcProgression()
+        question = data[0]
+        correctAnswer = String(data[1])
+        break
+        case 'prime':
+        console.log('Answer "yes" if given number is prime. Otherwise answer "no"')
+        data = funcPrimeNumber()
         question = data[0]
         correctAnswer = String(data[1])
         break
