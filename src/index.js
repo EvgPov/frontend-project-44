@@ -43,7 +43,7 @@ export const funcPrime = (playName) => {
         question = data[0]
         correctAnswer = String(data[1])
         break
-        case 'prime':
+      case 'prime':
         console.log('Answer "yes" if given number is prime. Otherwise answer "no"')
         data = funcPrimeNumber()
         question = data[0]

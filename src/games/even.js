@@ -1,13 +1,11 @@
-const isEven = (num) => {
-  if (num % 2 === 0) return 'yes'
-  else return 'no'
-}
+import { generator } from '../index.js'
 
-const genNumber = () => {
-  return Math.floor(Math.random() * (100 - 1.1) + 1.1)
+const isEven = (num) => {
+  if (num % 2 === 0) return true
+  else return false
 }
 
 export const funcEven = () => {
-  const number = genNumber()
-  return [number, isEven(number)]
+  const number = generator (1, 100)
+  return [number, isEven(number) ? 'yes' : 'no']
 }
