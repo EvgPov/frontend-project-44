@@ -46,7 +46,7 @@ export const funcPrime = (playName) => {
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')
     if (answer !== correctAnswer) {
-      console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}".\nLet\`s try again, ${name}!`)
+      console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`)
       return
     }
     else {
