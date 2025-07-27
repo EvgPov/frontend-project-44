@@ -11,6 +11,7 @@ export const generator = (min, max) => {
 }
 
 export const funcPrime = (playName) => {
+  console.log('Welcome to the Brain Games!')
   const name = getName()
   let counter = 0
 
