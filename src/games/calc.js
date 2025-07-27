@@ -1,10 +1,8 @@
-const genNumber = () => {
-  return Math.floor(Math.random() * (100 - 1.1) + 1.1)
-}
+import { generator } from '../index.js'
 
 const genOperation = () => {
   const operations = ['+', '-', '*']
-  const randomIndex = Math.floor(Math.random() * operations.length)
+  const randomIndex = generator(0, operations.length - 1)
   return operations[randomIndex]
 }
 
@@ -22,8 +20,8 @@ const calcuration = (operandFirst, operandSecond, operation) => {
 }
 
 export const funcCalc = () => {
-  const operandFirst = genNumber()
-  const operandSecond = genNumber()
+  const operandFirst = generator(1, 100)
+  const operandSecond = generator(1, 100)
   const operation = genOperation()
 
   const expression = `${operandFirst} ${operation} ${operandSecond}`
