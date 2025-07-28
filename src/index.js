@@ -7,7 +7,7 @@ import { funcProgression } from './games/progression.js'
 import { funcPrimeNumber } from './games/prime.js'
 
 export const generator = (min, max) => {
-  return Math.floor(min + Math.random() * (max + 1 - min))
+  return Math.floor(min + crypto.getRandomValues(new Uint8Array(1)) / 255 * (max + 1 - min))
 }
 
 export const funcPrime = (playName) => {
