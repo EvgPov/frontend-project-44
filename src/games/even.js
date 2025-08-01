@@ -3,9 +3,9 @@ import { generator } from '../index.js'
 const isEven = num => num % 2 === 0
 
 export const funcEven = () => {
-  const number = generator (1, 100)
+  const num = generator (1, 100)
   return {
-    data: number,
-    correctAnswer: isEven(number) ? 'yes' : 'no',
+    data: num,
+    correctAnswer: isEven(num) ? 'yes' : 'no'
   }
-}
+}  

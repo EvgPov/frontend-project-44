@@ -11,41 +11,44 @@ export const generator = (min, max) => {
   return randomInt(min, max + 1)
 }
 
-export const funcPrime = (playName) => {
-  console.log('Welcome to the Brain Games!')
-  const name = getName()
+const runGame = (gameName) => {
+  switch (gameName) {
+    case 'even':
+      console.log('Answer "yes" if the number is even, otherwise answer "no".')
+      return funcEven()
+    case 'calc':
+      console.log('What is the result of the expression?')
+      return funcCalc()
+    case 'gcd':
+      console.log('Find the greatest common divisor of given numbers.')
+      return funcGCD()
+    case 'progression':
+      console.log('What number is missing in the progression?')
+      return funcProgression()
+    case 'prime':
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no"')
+      return funcPrimeNumber()
+  }
+}
+
+const askQuestion = (question) => {
+  console.log(`Question: ${question}`)
+  return readlineSync.question('Your answer: ')
+}
+
+export const playGame = (gameName) => {
+  console.log('Welcome to the Brain Games!') // приветствие
+  const name = getName() // получение имени 
   let counter = 0
 
   while (counter !== 3) {
     let data
-    let question
     let correctAnswer
-    switch (playName) {
-      case 'even':
-        console.log('Answer "yes" if the number is even, otherwise answer "no".')
-        data = funcEven()
-        break
-      case 'calc':
-        console.log('What is the result of the expression?')
-        data = funcCalc()
-        break
-      case 'gcd':
-        console.log('Find the greatest common divisor of given numbers.')
-        data = funcGCD()
-        break
-      case 'progression':
-        console.log('What number is missing in the progression?')
-        data = funcProgression()
-        break
-      case 'prime':
-        console.log('Answer "yes" if given number is prime. Otherwise answer "no"')
-        data = funcPrimeNumber()
-        break
-    }
-    question = data.data
-    correctAnswer = String(data.correctAnswer)
-    console.log(`Question: ${question}`)
-    const answer = readlineSync.question('Your answer: ')
+    let answer
+   
+    data = runGame(gameName) // подготовка данных для вопроса и расчет правильного ответа
+    answer = askQuestion(data.data) // задать вопрос и получить ответ пользователя
+    correctAnswer = String(data.correctAnswer) // сохранение правильтного ответа
     if (answer !== correctAnswer) {
       console.log(`"${answer}" is wrong answer :(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`)
       return

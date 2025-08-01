@@ -6,27 +6,24 @@ const genOperation = () => {
   return operations[randomIndex]
 }
 
-const calcuration = (operandFirst, operandSecond, operation) => {
-  switch (operation) {
-    case '+':
-      return operandFirst + operandSecond
-    case '-':
-      return operandFirst - operandSecond
-    case '*':
-      return operandFirst * operandSecond
-    default:
-      return
-  }
-}
-
 export const funcCalc = () => {
-  const operandFirst = generator(1, 100)
-  const operandSecond = generator(1, 100)
-  const operation = genOperation()
-
-  const expression = `${operandFirst} ${operation} ${operandSecond}`
+  const object = {
+    operandFirst: generator(1, 100),
+    operandSecond: generator(1, 100),
+    operation: genOperation(),
+    calcuration : function() {
+      switch (this.operation) {
+        case '+':
+          return this.operandFirst + this.operandSecond
+        case '-':
+          return this.operandFirst - this.operandSecond
+        case '*':
+          return this.operandFirst * this.operandSecond
+      }
+    }
+  }
   return {
-    data: expression,
-    correctAnswer: calcuration(operandFirst, operandSecond, operation),
+    data: `${object.operandFirst} ${object.operation} ${object.operandSecond}`,
+    correctAnswer: object.calcuration(),
   }
 }

@@ -1,28 +1,28 @@
 import { generator } from '../index.js'
 
-const findGCD = (numberFirst, numberSecond) => {
-  let remainder = 1
-
-  if (numberFirst < numberSecond) {
-    const number = numberFirst
-    numberFirst = numberSecond
-    numberSecond = number
-  }
-
-  while (remainder !== 0) {
-    remainder = numberFirst % numberSecond
-    numberFirst = numberSecond
-    numberSecond = remainder
-  }
-  return numberFirst
-}
-
 export const funcGCD = () => {
-  const numberFirst = generator(1, 100)
-  const numberSecond = generator(1, 100)
-  const expression = `${numberFirst} ${numberSecond}`
+  const object = {
+    numberFirst: generator(1, 100),
+    numberSecond: generator(1, 100),
+    correctAnswer: function() {
+      let remainder = 1
+
+      if (this.numberFirst < this.numberSecond) { // меняем местами, чтобы первое число всегда было больше второго
+        const number = this.numberFirst
+        this.numberFirst = this.numberSecond
+        this.numberSecond = number
+      }
+
+      while (remainder !== 0) {
+        remainder = this.numberFirst % this.numberSecond
+        this.numberFirst = this.numberSecond
+        this.numberSecond = remainder
+      }
+      return this.numberFirst
+    },
+  }
   return {
-    data: expression,
-    correctAnswer: findGCD(numberFirst, numberSecond),
+    data: `${object.numberFirst} ${object.numberSecond}`,
+    correctAnswer: object.correctAnswer(),
   }
 }

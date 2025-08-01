@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { funcPrime } from '../src/index.js'
+import { playGame } from '../src/index.js'
 
-funcPrime('prime')
+playGame('prime')
