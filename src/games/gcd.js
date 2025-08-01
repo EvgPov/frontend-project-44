@@ -4,7 +4,7 @@ export const funcGCD = () => {
   const object = {
     numberFirst: generator(1, 100),
     numberSecond: generator(1, 100),
-    correctAnswer: function() {
+    correctAnswer: function () {
       let remainder = 1
 
       if (this.numberFirst < this.numberSecond) { // меняем местами, чтобы первое число всегда было больше второго

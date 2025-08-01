@@ -11,7 +11,7 @@ export const funcCalc = () => {
     operandFirst: generator(1, 100),
     operandSecond: generator(1, 100),
     operation: genOperation(),
-    calcuration : function() {
+    calcuration: function () {
       switch (this.operation) {
         case '+':
           return this.operandFirst + this.operandSecond
