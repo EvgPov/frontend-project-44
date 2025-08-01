@@ -1,3 +1,4 @@
+import { randomInt } from 'crypto'
 import readlineSync from 'readline-sync'
 import { getName } from '../src/cli.js'
 import { funcEven } from './games/even.js'
@@ -7,7 +8,7 @@ import { funcProgression } from './games/progression.js'
 import { funcPrimeNumber } from './games/prime.js'
 
 export const generator = (min, max) => {
-  return Math.floor(min + crypto.getRandomValues(new Uint8Array(1)) / 255 * (max + 1 - min))
+  return randomInt(min, max + 1)
 }
 
 export const funcPrime = (playName) => {
