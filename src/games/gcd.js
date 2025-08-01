@@ -23,6 +23,6 @@ export const funcGCD = () => {
   const expression = `${numberFirst} ${numberSecond}`
   return {
     data: expression,
-     correctAnswer: findGCD(numberFirst, numberSecond)
-  }  
+    correctAnswer: findGCD(numberFirst, numberSecond),
+  }
 }

@@ -27,6 +27,6 @@ export const funcCalc = () => {
   const expression = `${operandFirst} ${operation} ${operandSecond}`
   return {
     data: expression,
-    correctAnswer: calcuration(operandFirst, operandSecond, operation)
+    correctAnswer: calcuration(operandFirst, operandSecond, operation),
   } 
 }
