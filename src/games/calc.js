@@ -20,7 +20,7 @@ export const funcCalc = () => {
         case '*':
           return this.operandFirst * this.operandSecond
       }
-    }
+    },
   }
   return {
     data: `${object.operandFirst} ${object.operation} ${object.operandSecond}`,
