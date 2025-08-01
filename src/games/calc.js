@@ -28,5 +28,5 @@ export const funcCalc = () => {
   return {
     data: expression,
     correctAnswer: calcuration(operandFirst, operandSecond, operation),
-  } 
+  }
 }

@@ -22,5 +22,5 @@ export const funcProgression = () => {
   return {
     data: progression.join(' '),
     correctAnswer: correctAnswer,
-  }  
+  }
 }

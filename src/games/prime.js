@@ -17,5 +17,5 @@ export const funcPrimeNumber = () => {
   return {
     data: number,
     correctAnswer: isPrimeNumber(number) ? 'yes' : 'no',
-  }   
+  }
 }
