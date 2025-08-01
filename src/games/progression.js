@@ -19,5 +19,8 @@ export const funcProgression = () => {
     else progression.push(item)
     counter += 1
   }
-  return [progression.join(' '), correctAnswer]
+  return {
+    data: progression.join(' '),
+    correctAnswer: correctAnswer
+  }  
 }

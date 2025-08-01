@@ -41,8 +41,8 @@ export const funcPrime = (playName) => {
         data = funcPrimeNumber()
         break
     }
-    question = data[0]
-    correctAnswer = String(data[1])
+    question = data.data
+    correctAnswer = String(data.correctAnswer)
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')
     if (answer !== correctAnswer) {

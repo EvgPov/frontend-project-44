@@ -21,5 +21,8 @@ export const funcGCD = () => {
   const numberFirst = generator(1, 100)
   const numberSecond = generator(1, 100)
   const expression = `${numberFirst} ${numberSecond}`
-  return [expression, findGCD(numberFirst, numberSecond)]
+  return {
+    data: expression,
+     correctAnswer: findGCD(numberFirst, numberSecond)
+  }  
 }

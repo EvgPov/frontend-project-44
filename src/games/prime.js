@@ -14,5 +14,8 @@ const isPrimeNumber = (number) => {
 
 export const funcPrimeNumber = () => {
   let number = generator (1, 100)
-  return [number, isPrimeNumber(number) ? 'yes' : 'no']
+  return {
+    data: number,
+     correctAnswer: isPrimeNumber(number) ? 'yes' : 'no'
+  }   
 }
