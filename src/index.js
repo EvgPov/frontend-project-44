@@ -38,14 +38,13 @@ const askQuestion = (question) => {
 
 export const playGame = (gameName) => {
   console.log('Welcome to the Brain Games!') // приветствие
-  const name = getName() // получение имени 
+  const name = getName() // получение имени
   let counter = 0
 
   while (counter !== 3) {
     let data
     let correctAnswer
     let answer
-   
     data = runGame(gameName) // подготовка данных для вопроса и расчет правильного ответа
     answer = askQuestion(data.data) // задать вопрос и получить ответ пользователя
     correctAnswer = String(data.correctAnswer) // сохранение правильтного ответа
