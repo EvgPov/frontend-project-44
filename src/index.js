@@ -8,26 +8,26 @@ import { funcProgression } from './games/progression.js'
 import { funcPrimeNumber } from './games/prime.js'
 
 const gameChoice = {
-  'even': {
+  even: {
     message: 'Answer "yes" if the number is even, otherwise answer "no".',
     gameFunction: funcEven,
   },
-  'calc': {
+  calc: {
     message: 'What is the result of the expression?',
     gameFunction: funcCalc,
   },
-  'gcd': {
+  gcd: {
     message: 'Find the greatest common divisor of given numbers.',
     gameFunction: funcGCD,
-  }, 
-  'progression': {
+  },
+  progression: {
     message: 'What number is missing in the progression?',
     gameFunction: funcProgression,
   },
-  'prime': {
+  prime: {
     message: 'Answer "yes" if given number is prime. Otherwise answer "no"',
     gameFunction: funcPrimeNumber,
-  }  
+  },
 }
 
 export const generator = (min, max) => { // генератор целых чисел
@@ -46,12 +46,12 @@ const getUserAnswer = (question) => { // задать вопрос - получ�
 const checkAnswer = (userAnswer, correctAnswer) => { // проверить ответ
   return userAnswer !== String(correctAnswer)
 }
-  
+
 export const playGame = (gameName) => { // функция реализующая выбранную игру
   console.log('Welcome to the Brain Games!')
   const name = getName() // получение имени игрока
 
- console.log(gameChoice[gameName]['message'])
+  console.log(gameChoice[gameName]['message'])
   let counter = 0
 
   while (counter !== 3) {
@@ -62,11 +62,12 @@ export const playGame = (gameName) => { // функция реализующая
     if (checkAnswer(userAnswer, correctAnswer)) { // если ответ неверный
       console.log(`"${userAnswer}" is wrong answer :(. Correct answer was "${String(correctAnswer)}".\nLet's try again, ${name}!`)
       return // неудачное завершение игры
-    } else {
+    }
+    else {
       counter++ // если ответ верный
       console.log(`Correct!`)
     }
   }
-  console.log(`Congratulations, ${name}!`) 
+  console.log(`Congratulations, ${name}!`)
   return // успешное завершение игры
 }
