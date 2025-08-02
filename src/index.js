@@ -1,5 +1,5 @@
 import { randomInt } from 'crypto'
-import readlineSync  from 'readline-sync'
+import readlineSync from 'readline-sync'
 import { getName } from '../src/cli.js'
 import { funcEven } from './games/even.js'
 import { funcCalc } from './games/calc.js'
