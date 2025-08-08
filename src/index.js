@@ -76,5 +76,4 @@ export const playGame = gameName => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return; // успешное завершение игры
 };

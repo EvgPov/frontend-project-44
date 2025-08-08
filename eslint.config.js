@@ -23,7 +23,6 @@ export default [
       'no-var': 'error',
       'prefer-const': 'warm',
       ...eslintConfigPrettier.rules,
-      'prefer-const': 'error',
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
   },

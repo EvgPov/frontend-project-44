@@ -7,7 +7,19 @@
 [Клонирование репозитория с проектом на локальный компьютер]: #
 
 ```
-    https://github.com/EvgPov/frontend-project-44.git
+    git clone https://github.com/EvgPov/frontend-project-44.git
+```
+
+2. 2. Navigate to the project directory:
+
+```
+    cd frontend-project-44
+```
+
+3. Install dependencies
+
+```
+    npm install
 ```
 
 [![Actions
