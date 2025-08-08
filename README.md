@@ -10,7 +10,7 @@
     git clone https://github.com/EvgPov/frontend-project-44.git
 ```
 
-2. 2. Navigate to the project directory:
+2. Navigate to the project directory:
 
 ```
     cd frontend-project-44
