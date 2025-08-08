@@ -1,10 +1,10 @@
-import { generator } from '../index.js'
+import { generator } from '../index.js';
 
 const genOperation = () => {
-  const operations = ['+', '-', '*']
-  const randomIndex = generator(0, operations.length - 1)
-  return operations[randomIndex]
-}
+  const operations = ['+', '-', '*'];
+  const randomIndex = generator(0, operations.length - 1);
+  return operations[randomIndex];
+};
 
 export const funcCalc = () => {
   const object = {
@@ -14,16 +14,16 @@ export const funcCalc = () => {
     calcuration: function () {
       switch (this.operation) {
         case '+':
-          return this.operandFirst + this.operandSecond
+          return this.operandFirst + this.operandSecond;
         case '-':
-          return this.operandFirst - this.operandSecond
+          return this.operandFirst - this.operandSecond;
         case '*':
-          return this.operandFirst * this.operandSecond
+          return this.operandFirst * this.operandSecond;
       }
     },
-  }
+  };
   return {
     data: `${object.operandFirst} ${object.operation} ${object.operandSecond}`,
     correctAnswer: object.calcuration(),
-  }
-}
+  };
+};
