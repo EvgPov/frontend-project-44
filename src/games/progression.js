@@ -15,7 +15,9 @@ export const funcProgression = () => {
     if (counter === hiddenPosition) {
       correctAnswer = item
       progression.push('..')
-    } else progression.push(item)
+    } else {
+      progression.push(item)
+    }
     counter += 1
   }
   return { data: progression.join(' '), correctAnswer: correctAnswer }

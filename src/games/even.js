@@ -1,6 +1,8 @@
 import { generator } from '../index.js'
 
-const isEven = (num) => num % 2 === 0
+const isEven = (num) => {
+  return num % 2 === 0
+}
 
 export const funcEven = () => {
   const num = generator(1, 100)
