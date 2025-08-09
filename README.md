@@ -1,5 +1,3 @@
- <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script> -->
-
 # Installation
 
 1. Clone repository

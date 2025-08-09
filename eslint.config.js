@@ -19,11 +19,24 @@ export default [
     languageOptions: { ...globals.node, ...globals.browser, ...globals.es2023 },
   },
   {
+    files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
     rules: {
       'no-var': 'error',
       'prefer-const': 'warm',
+      indent: ['error', 2],
+      curly: ['error', 'multi-line'],
       ...eslintConfigPrettier.rules,
-      'prettier/prettier': ['error', { endOfLine: 'auto' }],
+      'brace-style': ['error', '1tbs'],
+      'prettier/prettier': [
+        'error',
+        { endOfLine: 'auto' },
+        { braceStyle: '1tbs' },
+      ],
     },
   },
+  // {
+  //   files: ['Makefile'],
+  //   parser: 'eslint-plugin-markdown/parser',
+  //   rules: { 'prettier/prettier': 'warn' },
+  // },
 ]
