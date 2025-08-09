@@ -23,15 +23,11 @@ export default [
     rules: {
       'no-var': 'error',
       'prefer-const': 'warm',
-      indent: ['error', 2],
-      curly: ['error', 'multi-line'],
+      // indent: ['error', 2],
+      // curly: ['error', 'multi-line'],
       ...eslintConfigPrettier.rules,
       'brace-style': ['error', '1tbs'],
-      'prettier/prettier': [
-        'error',
-        { endOfLine: 'auto' },
-        { braceStyle: '1tbs' },
-      ],
+      'prettier/prettier': ['error', { endOfLine: 'auto', braceStyle: '1tbs' }],
     },
   },
   // {

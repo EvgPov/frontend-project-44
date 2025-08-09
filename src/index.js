@@ -70,8 +70,9 @@ export const playGame = (gameName) => {
         `"${userAnswer}" is wrong answer :(. Correct answer was "${String(correctAnswer)}".\nLet's try again, ${name}!`,
       )
       return // неудачное завершение игры
-    } else {
-      counter++ // если ответ верный
+    } // если ответ верный
+    else {
+      counter++
       console.log(`Correct!`)
     }
   }

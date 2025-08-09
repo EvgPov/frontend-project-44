@@ -15,7 +15,8 @@ export const funcProgression = () => {
     if (counter === hiddenPosition) {
       correctAnswer = item
       progression.push('..')
-    } else {
+    } // иначе добавляем в массив
+    else {
       progression.push(item)
     }
     counter += 1
