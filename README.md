@@ -9,7 +9,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Клонирование репозитория с проектом на локальный компьютер]: #
 
-```diff
+```
     git clone https://github.com/EvgPov/frontend-project-44.git
 ```
 
@@ -41,6 +41,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
   - progression.js
 
 3. Install dependencies
+
    [Установка зависимостей проекта]: #
 
 ```
@@ -48,7 +49,8 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 ```
 
 4. Create a global package link
-   []: #
+
+   [Создает глобальную символьную ссылку на пакет]: #
 
 ```
     npm link
@@ -78,7 +80,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Проверка на чётность"]: #
 
-### &nbsp;&nbsp;&nbsp;&nbsp;<font color="firebrick">HOW TO PLAY</font>
+### <font color="firebrick">HOW TO PLAY</font>
 
 1. A random number appears.
 2. Answer:
@@ -91,13 +93,13 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 4. **Win condition**: Answer **three** questions in a row correctly to win.
    <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; <font size="3">**[Demo "Brain Even"](https://asciinema.org/a/V7Bo9E86NUoZk51Dt12lxRssp 'brain-even')** featuring: package installation, game launch, and player win/lose scenarios.</font>
+<font size="3">**[Demo "Brain Even"](https://asciinema.org/a/V7Bo9E86NUoZk51Dt12lxRssp 'brain-even')** featuring: package installation, game launch, and player win/lose scenarios.</font>
 
 ## Brain Calc Game ("The Calculator")
 
 [Об игре "Калькулятор"]: #
 
-### &nbsp;&nbsp;&nbsp;&nbsp;<font color="firebrick">HOW TO PLAY</font>
+### <font color="firebrick">HOW TO PLAY</font>
 
 1. A random math expression appears (e.g., 5 + 3).
 
@@ -108,13 +110,13 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 4. **Win condition**: Solve **three** problems in a row correctly to win.
    <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; <font size="3">**[Demo "Brain Calc"](https://asciinema.org/a/nrND4OL6lnJD3vKEAJGEoxKxd 'brain-calc')** featuring: package installation, game launch, and player win/lose scenarios.</font>
+<font size="3">**[Demo "Brain Calc"](https://asciinema.org/a/nrND4OL6lnJD3vKEAJGEoxKxd 'brain-calc')** featuring: package installation, game launch, and player win/lose scenarios.</font>
 
 ## Brain GCD Game ("Greatest Common Divisor Challenge")
 
 [Об игре "Наибольший общий делитель"]: #
 
-### &nbsp;&nbsp;&nbsp;&nbsp;<font color="firebrick">HOW TO PLAY</font>
+### <font color="firebrick">HOW TO PLAY</font>
 
 1. Two random numbers appear (e.g., 12 and 18).
 
@@ -125,13 +127,13 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 4. **Win condition**: Solve **three** problems in a row correctly to win.
    <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; <font size="3">**[Demo "Brain GCD"](https://asciinema.org/a/S3G5m71LDTQ4T5CVWPgiOCicH 'brain-gcd')** featuring: package installation, game launch, and player win/lose scenarios.</font>
+<font size="3">**[Demo "Brain GCD"](https://asciinema.org/a/S3G5m71LDTQ4T5CVWPgiOCicH 'brain-gcd')** featuring: package installation, game launch, and player win/lose scenarios.</font>
 
 ## Brain Progression ("Arithmetic Progression Challenge")
 
 [Об игре "Арифметическая прогрессия"]: #
 
-### &nbsp;&nbsp;&nbsp;&nbsp;<font color="firebrick">HOW TO PLAY</font>
+### <font color="firebrick">HOW TO PLAY</font>
 
 1. A sequence with a missing number appears (e.g., 3, 7, 11, ?, 19).
 
@@ -142,13 +144,13 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 4. **Win condition**: Solve **three** sequences in a row correctly to win.
    <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; <font size="3">**[Demo "Brain Progression"](https://asciinema.org/a/Wn1b5wovgkJG5pSKfN5sCPEqg 'brain-progression')** featuring: package installation, game launch, and player win/lose scenarios.</font>
+<font size="3">**[Demo "Brain Progression"](https://asciinema.org/a/Wn1b5wovgkJG5pSKfN5sCPEqg 'brain-progression')** featuring: package installation, game launch, and player win/lose scenarios.</font>
 
 ## Brain Prime Game ("Is It Prime?")
 
 [Об игре "Простое ли число?"]: #
 
-### &nbsp;&nbsp;&nbsp;&nbsp;<font color="firebrick">HOW TO PLAY</font>
+### <font color="firebrick">HOW TO PLAY</font>
 
 1. A random number appears (e.g., 17).
 2. Answer:
@@ -161,4 +163,4 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 4. **Win condition**: Answer **three** questions in a row correctly to win.
    <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp; <font size="3">**[Demo "Brain Prime"](https://asciinema.org/a/92bsLxtRG8a0yvhwdkGxi0Uab 'brain-prime')** featuring: package installation, game launch, and player win/lose scenarios.</font>
+<font size="3">**[Demo "Brain Prime"](https://asciinema.org/a/92bsLxtRG8a0yvhwdkGxi0Uab 'brain-prime')** featuring: package installation, game launch, and player win/lose scenarios.</font>
