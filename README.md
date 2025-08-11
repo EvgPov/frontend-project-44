@@ -30,15 +30,15 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
   - brain-progression.js
 
 - the directory <font color="green">**"src"**</font> contains the core games logic:
-- <font color="green">**index.js**</font> contains functions with core game logic that powers all games
-- <font color="green">**cli.js**</font> contains a function requesting username and greeting the user
-- <font color="green">**games**</font> - the subdirectory with specific game logic files
-  - calc.js
-  - even.js
-  - games.js
-  - gcd.js
-  - prime.js
-  - progression.js
+  - <font color="green">**index.js**</font> contains functions with core game logic that powers all games
+  - <font color="green">**cli.js**</font> contains a function requesting username and greeting the user
+  - <font color="green">**games**</font> - the subdirectory with specific game logic files
+    - calc.js
+    - even.js
+    - games.js
+    - gcd.js
+    - prime.js
+    - progression.js
 
 3. Install dependencies
 
