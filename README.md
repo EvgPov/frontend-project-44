@@ -21,7 +21,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
     cd frontend-project-44
 ```
 
-- the directory <font color="green">**"bin"**</font> contains all executable files:
+- the directory ${\color{green}"bin"}$ contains all executable files:
   - brain-calc.js
   - brain-even.js
   - brain-games.js
@@ -29,10 +29,10 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
   - brain-prime.js
   - brain-progression.js
 
-- the directory <font color="green">**"src"**</font> contains the core games logic:
-  - <font color="green">**index.js**</font> contains functions with core game logic that powers all games
-  - <font color="green">**cli.js**</font> contains a function requesting username and greeting the user
-  - <font color="green">**games**</font> - the subdirectory with specific game logic files
+- the directory ${\color{green}"src"}$ contains the core games logic:
+  - ${\color{green}index.js}$ contains functions with core game logic that powers all games
+  - ${\color{green}cli.js}$ contains a function requesting username and greeting the user
+  - ${\color{green}games}$ - the subdirectory with specific game logic files
     - calc.js
     - even.js
     - games.js
@@ -60,17 +60,17 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Доступные команды]: #
 
-- `brain-games`: returns a <font color="green">**greeting**</font> and requests <font color="green">username</font> input
+- `brain-games`: returns a ${\color{green}greeting}$ and requests ${\color{green}username}$ input
 
-- `brain-even`: launch the <font color="green">**"Brain Even"**</font> game
+- `brain-even`: launch the ${\color{green}"Brain Even"}$ game
 
-- `brain-calc`: launch the <font color="green">**"Brain Calc"**</font> game
+- `brain-calc`: launch the ${\color{green}"Brain Calc"}$ game
 
-- `brain-gcd`: launch the <font color="green">**"Brain GCD"** </font>game
+- `brain-gcd`: launch the ${\color{green}"Brain GCD"}$ game
 
-- `brain-progression`: launch the <font color="green">**"Brain Progression"**</font> game
+- `brain-progression`: launch the ${\color{green}"Brain Progression"}$ game
 
-- `brain-prime`: launch the <font color="green">**"Brain Prime"**</font> game
+- `brain-prime`: launch the ${\color{green}"Brain Prime"}$ game
 
 # <center>Game Logic Description</center>
 
@@ -80,7 +80,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Проверка на чётность"]: #
 
-### <font color="firebrick">HOW TO PLAY</font>
+### ${\color{red}HOW\space TO\space PLAY}$
 
 1. A random number appears.
 2. Answer:
@@ -99,7 +99,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Калькулятор"]: #
 
-### <font color="firebrick">HOW TO PLAY</font>
+### ${\color{red}HOW \space TO \space PLAY}$
 
 1. A random math expression appears (e.g., 5 + 3).
 
@@ -116,7 +116,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Наибольший общий делитель"]: #
 
-### <font color="firebrick">HOW TO PLAY</font>
+### ${\color{red}HOW \space TO \space PLAY}$
 
 1. Two random numbers appear (e.g., 12 and 18).
 
@@ -133,7 +133,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Арифметическая прогрессия"]: #
 
-### <font color="firebrick">HOW TO PLAY</font>
+### ${\color{red}HOW \space TO \space PLAY}$
 
 1. A sequence with a missing number appears (e.g., 3, 7, 11, ?, 19).
 
@@ -150,7 +150,7 @@ Smells](https://sonarcloud.io/api/project_badges/measure?project=EvgPov_frontend
 
 [Об игре "Простое ли число?"]: #
 
-### <font color="firebrick">HOW TO PLAY</font>
+### ${\color{red}HOW \space TO \space PLAY}$
 
 1. A random number appears (e.g., 17).
 2. Answer:
